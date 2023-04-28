@@ -9,7 +9,12 @@ function App() {
 
   const handleCurrencyChange = () => {
     //TODO: using traditional if else statement determine the new currency
-    setCurrency(currency === "EUR" ? "USD" : "EUR");
+    // setCurrency(currency === "EUR" ? "USD" : "EUR");
+    if (currency === "USD") {
+      setCurrency("EUR");
+    } else {
+      setCurrency("USD");
+    }
   };
 
   return (
